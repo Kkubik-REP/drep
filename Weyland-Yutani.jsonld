@@ -1,0 +1,77 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Weyland-Yutani"
+    },
+    "motivations": {
+      "@value": "By becoming a DRep, we play a direct role in the decentralized governance of the Cardano network, ensuring that power and decision-making are distributed among the community rather than centralized entities."
+    },
+    "objectives": {
+      "@value": "Building Better Worlds\n\nEnsure open and transparent communication with your delegators about your decisions and voting rationale.\n\nBuild trust within the community by maintaining a high level of integrity and honesty.\n\nStay Informed and Educated:\n\nContinuously educate yourself about the latest developments in the Cardano ecosystem, including new proposals, technological advancements, and governance changes.\n\nParticipate in webinars, read whitepapers, and engage with community forums to stay up-to-date.\n\nActive Participation:\n\nRegularly participate in voting on proposals to help shape the future of the Cardano network."
+    },
+    "paymentAddress": {
+      "@value": "addr1qyr584l4jsk0u8yur7nuw03k5u3e4hg7eawj6tdzv50p37vttxg8rxdap7dppceh8377kg7sp8q9qmc98ytlg5r9w9gs8mh2jy"
+    },
+    "qualifications": {
+      "@value": "A good understanding of blockchain technology, Cardano's ecosystem, and governance processes is essential.\n\nCommitment: Being prepared to actively participate in governance activities, including voting on proposals and representing the interests of your delegators"
+    },
+    "references": []
+  }
+}
